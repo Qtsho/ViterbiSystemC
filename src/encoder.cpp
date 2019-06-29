@@ -1,7 +1,7 @@
 #include <systemc.h>
 #include "encoder.h"
 
-void Viterbi_Encoder::encode(void) {
+void Convolution_Encoder::encode(void) {
 	sc_bit out1, out2;
 	sc_bit s0, s1, s2, s3;
 	while (true) {

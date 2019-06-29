@@ -1,9 +1,9 @@
 //#ifndef VITERBIENCODER_H_
-#define VITERBIENCODER_H_
+#define CONVOENCODER_H_
 
 #include<systemc.h>
 
-SC_MODULE(Viterbi_Encoder) {
+SC_MODULE(Convolution_Encoder) {
 
 	sc_in<bool> clk;
 	sc_in<sc_bit> in;
@@ -13,7 +13,7 @@ SC_MODULE(Viterbi_Encoder) {
 
 	void encode();
 
-	SC_CTOR(Viterbi_Encoder) {
+	SC_CTOR(Convolution_Encoder) {
 		r = "0000";
 		SC_THREAD(encode);
 		sensitive << clk;

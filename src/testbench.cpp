@@ -15,19 +15,19 @@ int sc_main(int argc, char* argv[])
 	driver d1("driver");
 	d1.in(in);
 
-	Viterbi_Encoder e("ViterbiEncoder");
+	Convolution_Encoder e("ConvolutionalEncoder");
 	e.in(in);
 	e.clk(clk);
 	e.op1(out1);
 	e.op2(out2);
 
 
-	tf = sc_create_vcd_trace_file("waves");
+	tf = sc_create_vcd_trace_file("Sim");
 	tf->set_time_unit(1, SC_NS);
 	sc_trace(tf, clk, "Clock");
-	sc_trace(tf, in, "Input");
-	sc_trace(tf, out1, "Out1");
-	sc_trace(tf, out2, "Out2");
+	sc_trace(tf, in, "InputBit");
+	sc_trace(tf, out1, "OutputBit1");
+	sc_trace(tf, out2, "OutputBit2");
 
 	sc_start();/**< start the simulation and run indefinately */
 
