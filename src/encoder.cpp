@@ -1,7 +1,7 @@
 #include <systemc.h>
 #include "encoder.h"
 
-void Convolution_Encoder::encode(void) {
+void Convolution_Encoder::decode(void) {
 	sc_bit out1, out2;
 	sc_bit s0, s1, s2, s3;
 	while (true) {
@@ -22,9 +22,6 @@ void Convolution_Encoder::encode(void) {
 		s1 = r[1];
 		s2 = r[2];
 		s3 = r[3];
-
-		cout << "In: " << in << " - Out:" << out1 << out2;
-		cout << " - State: " << s0 << s1 << s2 << s3 << endl;
 
 		wait(2, SC_NS);
 	}

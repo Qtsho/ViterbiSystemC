@@ -20,8 +20,7 @@ int sc_main(int argc, char* argv[])
 	e.clk(clk);
 	e.op1(out1);
 	e.op2(out2);
-
-
+	
 	tf = sc_create_vcd_trace_file("Sim");
 	tf->set_time_unit(1, SC_NS);
 	sc_trace(tf, clk, "Clock");
@@ -29,7 +28,7 @@ int sc_main(int argc, char* argv[])
 	sc_trace(tf, out1, "OutputBit1");
 	sc_trace(tf, out2, "OutputBit2");
 
-	sc_start();/**< start the simulation and run indefinately */
+	sc_start();
 
-	return 0;/**< Return Success */
+	return 0;
 }
