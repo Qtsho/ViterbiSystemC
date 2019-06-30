@@ -4,7 +4,7 @@ Thís project implements the Convolutional Encoder and Viterbi Decoder using Sys
 
 1/ Install cmake.
 
-2/ cd builb
+2/ cd build
 
 3/ cmake .
 
