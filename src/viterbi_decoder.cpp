@@ -2,5 +2,15 @@
 
 
 void Viterbi_Decoder::decode(void) {
+	//HERE WRITE THE CODE
+
+	//HERE WRITE THE CODE
+
+	//HERE WRITE THE CODE
 	
+	//HERE WRITE THE CODE
+
+
+
+
 }

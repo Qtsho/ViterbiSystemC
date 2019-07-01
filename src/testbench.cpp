@@ -20,13 +20,25 @@ int sc_main(int argc, char* argv[])
 	e.clk(clk);
 	e.op1(out1);
 	e.op2(out2);
+
+	Viterbi_Decoder v("viterbi_decoder");
+	v.clk(clk)
+	v.out(33333333333) //HERE WRITE THE CODE 
+	//HERE WRITE THE CODE
 	
+	//HERE WRITE THE CODE
+	
+	//HERE WRITE THE CODE
+	
+
+
 	tf = sc_create_vcd_trace_file("Sim");
 	tf->set_time_unit(1, SC_NS);
 	sc_trace(tf, clk, "Clock");
 	sc_trace(tf, in, "InputBit");
 	sc_trace(tf, out1, "OutputBit1");
 	sc_trace(tf, out2, "OutputBit2");
+	sc_trace(tf, original, "Decoded stream");
 
 	sc_start();
 
