@@ -204,6 +204,33 @@ src/testbench.cpp.s:
 	$(MAKE) -f CMakeFiles/viterbi.dir/build.make CMakeFiles/viterbi.dir/src/testbench.cpp.s
 .PHONY : src/testbench.cpp.s
 
+src/viterbi_decoder.o: src/viterbi_decoder.cpp.o
+
+.PHONY : src/viterbi_decoder.o
+
+# target to build an object file
+src/viterbi_decoder.cpp.o:
+	$(MAKE) -f CMakeFiles/viterbi.dir/build.make CMakeFiles/viterbi.dir/src/viterbi_decoder.cpp.o
+.PHONY : src/viterbi_decoder.cpp.o
+
+src/viterbi_decoder.i: src/viterbi_decoder.cpp.i
+
+.PHONY : src/viterbi_decoder.i
+
+# target to preprocess a source file
+src/viterbi_decoder.cpp.i:
+	$(MAKE) -f CMakeFiles/viterbi.dir/build.make CMakeFiles/viterbi.dir/src/viterbi_decoder.cpp.i
+.PHONY : src/viterbi_decoder.cpp.i
+
+src/viterbi_decoder.s: src/viterbi_decoder.cpp.s
+
+.PHONY : src/viterbi_decoder.s
+
+# target to generate assembly for a file
+src/viterbi_decoder.cpp.s:
+	$(MAKE) -f CMakeFiles/viterbi.dir/build.make CMakeFiles/viterbi.dir/src/viterbi_decoder.cpp.s
+.PHONY : src/viterbi_decoder.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,6 +249,9 @@ help:
 	@echo "... src/testbench.o"
 	@echo "... src/testbench.i"
 	@echo "... src/testbench.s"
+	@echo "... src/viterbi_decoder.o"
+	@echo "... src/viterbi_decoder.i"
+	@echo "... src/viterbi_decoder.s"
 .PHONY : help
 
 

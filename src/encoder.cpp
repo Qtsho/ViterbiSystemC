@@ -2,26 +2,26 @@
 #include "encoder.h"
 
 void Convolution_Encoder::encode(void) {
-	sc_bit out1, out2;
+	sc_bit output1, output2;
 	sc_bit s0, s1, s2, s3;
 	while (true) {
 		wait();
-		r[3] = r[2];
-		r[2] = r[1];
-		r[1] = r[0];
-		r[0] = in;
+		reg[3] = reg[2];
+		reg[2] = reg[1];
+		reg[1] = reg[0];
+		reg[0] = in;
 
-		out1 = r[0]^r[1]^r[2]^r[3];
-		out2 = r[0]^r[1]^r[3];
+		output1 = reg[0]^reg[1]^reg[2]^reg[3];
+		output2 = reg[0]^reg[1]^reg[3];
 
 
-		op1.write(out1);
-		op2.write(out2);
+		op1.write(output1);
+		op2.write(output2);
 
-		s0 = r[0];
-		s1 = r[1];
-		s2 = r[2];
-		s3 = r[3];
+		s0 = reg[0];
+		s1 = reg[1];
+		s2 = reg[2];
+		s3 = reg[3];
 
 		wait(2, SC_NS);
 	}

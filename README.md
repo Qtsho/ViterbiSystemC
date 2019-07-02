@@ -1,6 +1,7 @@
 # ViterbiSystemC
+Dev Env: Ubuntu repo 14.04LTS
 
-Thís project implements the Convolutional Encoder and Viterbi Decoder using SystemC
+This project implements the Convolutional Encoder and Viterbi Decoder using SystemC
 
 1/ Install cmake.
 
@@ -10,4 +11,4 @@ Thís project implements the Convolutional Encoder and Viterbi Decoder using Sys
 
 4/ make
 
-The built file name viterbi, run the file to generate the .vcd file for tracing
+The built program name viterbi, run the file to generate the .vcd file for tracing purpose.

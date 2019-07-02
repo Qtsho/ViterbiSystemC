@@ -1,5 +1,5 @@
 $date
-     Jun 29, 2019       20:43:18
+     Jul 02, 2019       21:33:33
 $end
 
 $version
@@ -12,7 +12,7 @@ $end
 
 $scope module SystemC $end
 $var wire    1  aaaaa  Clock       $end
-$var wire    1  aaaab  InputBit       $end
+$var wire    1  aaaab  Inputbit       $end
 $var wire    1  aaaac  OutputBit1       $end
 $var wire    1  aaaad  OutputBit2       $end
 $upscope $end
