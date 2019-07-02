@@ -14,7 +14,8 @@ SC_MODULE(Convolution_Encoder) {
 	
 
 	void encode();
-
+	void ShiftRegister();
+	void Convolution();
 	SC_CTOR(Convolution_Encoder) {
 		reg = "0000"; // init
 		SC_THREAD(encode);
