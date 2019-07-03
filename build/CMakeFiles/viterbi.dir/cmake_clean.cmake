@@ -2,7 +2,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/viterbi.dir/src/encoder.cpp.o"
   "CMakeFiles/viterbi.dir/src/driver.cpp.o"
   "CMakeFiles/viterbi.dir/src/testbench.cpp.o"
-  "CMakeFiles/viterbi.dir/src/viterbi_decoder.cpp.o"
   "viterbi.pdb"
   "viterbi"
 )

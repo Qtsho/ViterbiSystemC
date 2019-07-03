@@ -5,7 +5,6 @@ void driver::encoder_driver() {
 
 	int wt = 10;
 
-//
 	// out = sc_bit('1');
 	// wait(wt, SC_NS);
 

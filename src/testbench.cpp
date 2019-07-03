@@ -1,14 +1,14 @@
 #include "driver.h"
 #include "encoder.h"
 #include "systemc.h"
-#include "viterbi_decoder.h"
+
 
 int sc_main(int argc, char* argv[])
 {
 	sc_core::sc_report_handler::set_actions("/IEEE_Std_1666/deprecated",
 		sc_core::SC_DO_NOTHING);
 
-	sc_signal<sc_bit, SC_MANY_WRITERS> in, out1, out2, decode_output;
+	sc_signal<sc_bit, SC_MANY_WRITERS> in, out1, out2 ;
 
 	sc_clock clk("clk", 20, SC_NS, 0.5, 1, SC_NS, true);
 	sc_trace_file* tf;
@@ -35,7 +35,7 @@ int sc_main(int argc, char* argv[])
 	sc_trace(tf, in, "Inputbit");
 	sc_trace(tf, out1, "OutputBit1");
 	sc_trace(tf, out2, "OutputBit2");
-	sc_trace(tf, decode_output, "Decoded Data");
+	sc_trace(tf, in, "Decoded");
 	sc_start();
 
 	return 0;

@@ -14,10 +14,6 @@ systemc.h
 systemc.h
 -
 
-../include/viterbi_decoder.h
-systemc.h
--
-
 /home/quangtien/Downloads/systemc-2.3.2/src/sysc/communication/sc_buffer.h
 sysc/communication/sc_signal.h
 /home/quangtien/Downloads/systemc-2.3.2/src/sysc/communication/sysc/communication/sc_signal.h
@@ -1265,10 +1261,4 @@ encoder.h
 /home/quangtien/viterbi_HWSW/Viterbi_Encoder/src/encoder.h
 systemc.h
 /home/quangtien/viterbi_HWSW/Viterbi_Encoder/src/systemc.h
-viterbi_decoder.h
-/home/quangtien/viterbi_HWSW/Viterbi_Encoder/src/viterbi_decoder.h
-
-/home/quangtien/viterbi_HWSW/Viterbi_Encoder/src/viterbi_decoder.cpp
-viterbi_decoder.h
-/home/quangtien/viterbi_HWSW/Viterbi_Encoder/src/viterbi_decoder.h
 

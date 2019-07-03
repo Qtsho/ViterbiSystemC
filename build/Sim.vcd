@@ -1,5 +1,5 @@
 $date
-     Jul 02, 2019       22:06:05
+     Jul 02, 2019       22:32:11
 $end
 
 $version
@@ -15,6 +15,7 @@ $var wire    1  aaaaa  Clock       $end
 $var wire    1  aaaab  Inputbit       $end
 $var wire    1  aaaac  OutputBit1       $end
 $var wire    1  aaaad  OutputBit2       $end
+$var wire    1  aaaae  Decoded       $end
 $upscope $end
 $enddefinitions  $end
 
@@ -27,6 +28,7 @@ $dumpvars
 1aaaab
 0aaaac
 0aaaad
+1aaaae
 $end
 
 #1
@@ -34,12 +36,14 @@ $end
 
 #10
 0aaaab
+0aaaae
 
 #11
 0aaaaa
 
 #20
 1aaaab
+1aaaae
 
 #21
 1aaaaa
@@ -49,6 +53,7 @@ $end
 
 #40
 0aaaab
+0aaaae
 
 #41
 1aaaaa
